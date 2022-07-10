@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wireless Electrical Vehicle Charging System</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stylesmethod.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <b><a class="navbar-brand" href="rep1.pdf" target="_blank">Wireless Electrical Vehicle Charging System</a></b>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav navrig">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Abstract</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="intro.html">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="methodology.html"><b>Methodology</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="result.html">Result</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--.............................Navigation Ends/Abstract begins....................!-->
+<h1 class="titl"><b><center>METHODOLOGY</center></b></h1>
+<div class="box">
+  <p> &emsp; The Wireless electric vehicle charging system consists of mainly two parts i,e Transmission unit and Receiving unit. This project includes components such as Step down transformer of ratio 1:18, 1N4007 P-N junction Rectifier Bridge ,capacitive filter, TTC5200 BJT transistor and Induction coil.</p>
+
+ <div class="img"><center><img src="BD.png" alt="Block_Diagram"></center></div>
+<p>&emsp;In the <b>transmitter section</b>, the Transistor is generating high-frequency AC current across the coil and the coil is generating a magnetic field around it. As the coil is center tapped, the two sides of the coil start to charge up. One side of the coil is connected to the resistor and another side is connected to the collector terminal of the NPN transistor. During the charging condition, the base resistor starts to conduct which eventually turns on the transistor. The transistor then discharges the inductor as the emitter is connected with the ground. This charging and discharging of the inductor produces a very high frequency oscillation signal which is transmitted as a magnetic field. 
+</p>
+<p>&emsp;On the <b>receiver side</b>, that magnetic field is transferred into the other coil, and the receiver coil starts producing EMF voltage which is further used to charge the battery. After receiving this power, It is converted to  pure dc using Rectifier Bridge and capacitive filter. Then, received power is stored into the battery.</p>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
